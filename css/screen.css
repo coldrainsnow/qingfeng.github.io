@@ -15,10 +15,12 @@
   font:13.34px helvetica, arial, clean, sans-serif;
   font-size:small;
   text-align:center;
+  font-family: 'Noto Sans SC', 'Roboto', sans-serif;
   }
   
   h1,h2,h3,h4,h5,h6 {
   font-size:100%;
+  font-family: 'Noto Sans SC', 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   }
   
   p {
@@ -33,7 +35,7 @@
   
   ul.externalposts span {
   color:#aaa;
-  font-family:PingFangSC-Regular, sans-serif;
+  font-family:'Noto Sans SC', 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size:80%;
   }
   
@@ -184,7 +186,7 @@
   
   .date,.twittersmall {
   color:#aaa;
-  font-family:PingFangSC-Regular, sans-serif;
+  font-family:'Noto Sans SC', 'Roboto', 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size:80%;
   }
   
