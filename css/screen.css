@@ -119,8 +119,8 @@
   }
   
   #post pre {
-  border:1px solid #ddd;
-  background-color:#ddd;
+  border:1px solid #f5f5f5;
+  background-color:#f5f5f5;
   overflow:auto;
   padding:0 .4em;
   }
