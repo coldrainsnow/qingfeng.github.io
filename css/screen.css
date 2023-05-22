@@ -163,7 +163,8 @@
   }
   
   a,ul.externalposts a,ul.externalposts a:visited,.site .footer .contact a {
-  color:#F39;
+  color:rgb(51, 177, 255);
+  text-decoration: none;
   }
   
   a:hover,ul.externalposts a:hover,.site .footer .contact a:hover {
