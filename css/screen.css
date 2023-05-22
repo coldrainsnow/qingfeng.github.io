@@ -16,9 +16,9 @@ html, body {
 }
 
 body {
-  background-color: white;
+  background-color: rgb(121, 119, 119);
   font: 13.34px helvetica, arial, clean, sans-serif;
-  *font-size: small;
+  *font-size: medium;
   text-align: center;
 }
 
