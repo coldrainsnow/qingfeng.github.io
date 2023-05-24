@@ -19,7 +19,7 @@
   }
   
   h1,h2,h3,h4,h5,h6 {
-  font-size: 100%;
+  font-size: large;
   font-family: 'Noto Sans SC', sans-serif;
   }
   
@@ -135,11 +135,11 @@
   
   #post code {
   border:1px solid #fff;
-  font-size:85%;
+  font-size:100%;
   overflow:auto;
   width:60em;
   padding:0 .2em;
-  font-family: 'Noto Sans SC', sans-serif;
+  font-family: monospace;;
   }
   
   #post pre code {
