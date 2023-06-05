@@ -20,7 +20,7 @@ comments: true
 
 Tortoisegit有个功能是【贮藏更改】，进入后是这样的
 
-![image-20230605174727358](F:\ZYH\qingfenglan.github.io\images\2023-06-05-git的贮藏\image-20230605174727358.png)
+![image-20230605174727358](../images/image-20230605174727358.png)
 
 贮藏日志是说你把你修改的东西，命名下，然后先存到一个地方
 
@@ -32,7 +32,7 @@ Tortoisegit有个功能是【贮藏更改】，进入后是这样的
 
 把代码拉下来后呢，点击【贮藏列表】
 
-![image-20230605175327294](C:\Users\Lenovo\AppData\Roaming\Typora\typora-user-images\image-20230605175327294.png)
+![image-20230605175327294](../images/image-20230605175327294.png)
 
 这就是你刚才修改后的代码，右击一个日志，会发现有个叫做【应用贮藏】
 
