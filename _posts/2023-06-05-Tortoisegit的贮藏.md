@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tortoisegit的贮藏"
-date: 2023-05-05
+date: 2023-06-05
 excerpt: "不用再强制覆盖本地代码啦"
 tags: [cpp]
 comments: true
