@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "对象引用和对象指针"
-date: 2023-06-07
-excerpt: "神奇的指针"
+title: "ObjectARX几何图形库"
+date: 2023-06-09
+excerpt: "简单了解下AcGe"
 tags: [cpp]
 comments: true
 
