@@ -131,6 +131,7 @@ AcGeCurve3d::evalPoint(
     AcGeVector3dArray& derivArray) const;
 ```
 
-# 4.参考
+# 4.References
 
-[AutoCAD 2023 for Mac Developer and ObjectARX 帮助 | Using the Geometry Library | Autodesk](https://help.autodesk.com/view/OARXMAC/2023/CHS/?guid=GUID-BCD4C0B3-CCAA-4C10-9ABC-394CF6D52CA5)
+- [ObjectARX官方文档](https://help.autodesk.com/view/OARXMAC/2023/CHS/?guid=GUID-BCD4C0B3-CCAA-4C10-9ABC-394CF6D52CA5)
+
