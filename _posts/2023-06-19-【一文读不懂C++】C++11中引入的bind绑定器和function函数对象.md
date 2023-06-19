@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "【一文读不懂C++】C++11中引入的bind绑定器和function函数对象"
-date: 2023-06-16
+date: 2023-06-19
 excerpt: "C++11中引入的bind绑定器和function函数对象"
 tags: [cpp]
 comments: true
@@ -26,7 +26,7 @@ comments: true
 
 
 
-首先在上节，我们讲了Json::Value的基本使用，又简单介绍了其他的类，这节我们讲讲上节遗留的问题，什么是序列化和反序列化
+C++语法我是真的弱，所以这一段再把基础知识学一学吧，因为本来要做项目的，但是总是被语法给难倒，果真这还是基础和内功
 
 # 1.bind1st和bind2nd什么时候会用到
 
