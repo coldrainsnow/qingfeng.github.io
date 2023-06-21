@@ -661,5 +661,38 @@ private:
 
 其中上面的类模板声明不能删除，如果删除了 `template<typename Fty> class myfunction{};` 这一行代码，那么在定义特化版本的 `myfunction` 类模板时，编译器将无法找到 `myfunction` 类模板的原始声明。这将导致编译错误。因此，即使没有直接使用 `template<typename Fty> class myfunction{};` 这个类模板，它仍然是必需的，因为它为特化版本的 `myfunction` 类模板提供了原始声明。
 
+# 7.Bind
 
+std::bind绑定器，也是个类模板，C++11引入的
+
+std::bind能够将对象以及相关的参数绑定到一起，绑定完后可以直接调用，也可以用std::function进行保存，再需要的调用
+
+
+
+直接调用
+
+```cpp
+void hello(string str) { cout << str << endl; }
+
+int main()
+{
+	std::bind(hello, "china")();
+}
+```
+
+
+
+间接调用
+
+```cpp
+void hello(string str) { cout << str << endl; }
+
+int main()
+{
+	auto test = std::bind(hello, "china");
+	return 0;
+}
+```
+
+占位符placeholders::_1表示这个位置（当前placeholders::\_1）将在函数调用时，被传入的第一个参数
 
