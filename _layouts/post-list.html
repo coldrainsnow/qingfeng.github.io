@@ -16,6 +16,11 @@ layout: compress
 
 
     <header class="header" role="banner">
+        <style>
+            li a {
+                text-decoration: none;
+            }
+        </style>
         <div class="wrapper animated fadeIn">
             <div class="content">
                 {% include nav.html %}
@@ -32,9 +37,6 @@ layout: compress
                     {% if forloop.last %}
                 </ul>{% endif %}
                 {% endfor %}
-                li a {
-                    text-decoration: none;
-                }
             </div>
         </div>
     </header>
