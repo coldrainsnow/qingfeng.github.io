@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "【一文读不懂C++】论function和bind"
+title: "论function和bind"
 date: 2023-06-24
 excerpt: "论function和bind"
 tags: [cpp]
