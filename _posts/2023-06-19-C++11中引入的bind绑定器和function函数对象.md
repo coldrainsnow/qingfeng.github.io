@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "【一文读不懂C++】C++11中引入的bind绑定器和function函数对象"
+title: "C++11中引入的bind绑定器和function函数对象"
 date: 2023-06-19
 excerpt: "C++11中引入的bind绑定器和function函数对象"
 tags: [cpp]
@@ -707,5 +707,4 @@ int main()
 ```
 
 占位符placeholders::_1表示这个位置（当前placeholders::\_1）将在函数调用时，被传入的第一个参数
-
 
