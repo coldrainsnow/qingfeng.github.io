@@ -78,3 +78,8 @@ jekyll-mentions:
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
+
+# 把 _posts 目录下所有文章的链接转换成日期加时间的格式， 这样就可以让文章链接和分类信息解耦， 从而解决分类信息改变后文章链接 404 的问题
+collections:
+  posts:
+    permalink: /:year/:month/:day/:title/
