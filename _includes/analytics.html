@@ -1,0 +1,18 @@
+<!--
+  The GA snippet
+-->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<div id="analytics-box">
+  <script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+
+      gtag('js', new Date());
+      gtag('config', '{{ site.analytics.google }}');
+    });
+  </script>
+  <script async
+    type="text/javascript">document.write(unescape("%3Cspan id='{{ site.analytics.cnzz }}'%3E%3C/span%3E%3Cscript src='//s22.cnzz.com/z_stat.php%3Fid%3D1264408226%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
+</div>

@@ -1,85 +1,184 @@
-# Site
-title:              无敌清风蓝
-bio:                'Hello world'
-description:        "Blog of thoughs and archive of experience"
-# reading_time:       true
-# words_per_minute:   150
-logo:               'assets/img/logo.png'
-# background:         'assets/img/placeholder-big.jpg'
-tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
-locale:             en_US
-# url:                https://re-ra.xyz
-# url:                http://localhost:4000
+# 站点配置
 
-# Jekyll
-permalink:          /:title/
-markdown:           kramdown
-highlighter:        rouge
-kramdown:
-  auto_ids:         true
-  footnote_nr:      1
-  entity_output:    as_char
-  toc_levels:       1..4
-  enable_coderay:   false
-  parse_block_html: true
-mathjax:            true
-sass:
-  sass_dir:         _sass
-  style:            compressed
-# config the html compress, to avoid CDATA new line issue which is uncompatible with mathjax
-compress_html:
-  blanklines:       true
-# Comments
-disqus_shortname:   refraction-ray-disqus-com
+# 导入主题
+theme: jekyll-theme-chirpy
 
-# Social
-# if you don't have any of social below, comment the line.
-google:
-  #plus:            #username
-  analytics:        UA-112004850-1
-  #verify:
-  #ad-client:
-  #ad-slot:
-#bing-verify:
-#email:
-# twitter:            username
-# facebook:           username
-# github-url:         username
-#stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
-#linkedin:          username
-#xing:              username
-#instagram:          username
-#lastfm:            username
-#tumblr:            username
-#medium:            '@username'
-#pinterest:         username
-#foursquare:        username
-# steam:              username
-#dribbble:          username
-#youtube:           username
-#youtube-channel:   channel
-#soundcloud:        username
-#weibo:             username
-#flickr:            username
-#codepen:           username
-#keybase:           username
-#xmpp:              username@server.com
-#hackernews:        username
+# 站点基础设置
+url: 'https://blog.walterlv.com'
+baseurl: ''
+lang: zh-CN                            # _data/locales 文件夹中同名文件
+timezone: Asia/Shanghai
 
-# Gems
-gems:
-  - jekyll-mentions
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-gist
+# jekyll SEO 标签设置 › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+title: walterlv                        # the main title
+tagline: Blog site of walterlv         # it will display as the sub-title
+description: >-                        # used by seo meta and the atom feed
+  吕毅的博客。.NET/C#/WinUI/MAUI/WPF Windows
+  应用开发者，微软最有价值专家，Microsoft MVP。
 
-jekyll-mentions:
-    base_url: https://github.com
+# 文章设置
+author: 吕毅
+post_author: 吕毅
+description: 吕毅的博客。.NET/C#/WinUI/MAUI/WPF Windows 应用开发者，微软最有价值专家，Microsoft MVP。
+mail: walter.lv@qq.com
+about: .NET and Windows App Developer, Microsoft MVP
 
-# Exclude list
-exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
+# 社交账号设置
+github:
+  username: walterlv
+  link: https://github.com/walterlv
+facebook:
+  username: Xblero
+twitter:
+  username: _lvyi_
+stackoverflow:
+  link: https://stackoverflow.com/users/6233938/walterlv
 
-# 把 _posts 目录下所有文章的链接转换成日期加时间的格式， 这样就可以让文章链接和分类信息解耦， 从而解决分类信息改变后文章链接 404 的问题
+social:
+  name: walterlv
+  email: walter.lv@qq.com
+  links:
+    # The first element serves as the copyright owner's link
+    - https://github.com/walterlv
+    - https://stackoverflow.com/users/6233938/walterlv
+    - https://twitter.com/_lvyi_
+    - https://www.facebook.com/Xblero
+
+# 访问追踪
+analytics:
+  google: UA-108101550-1
+  cnzz: cnzz_stat_icon_1264408226
+disqus:
+  name: walterlv
+  url: https://walterlv.com
+gitment:
+  owner: walterlv
+  client_id: 9a8b44a07f269679e9b5
+  client_secret: 3412cef75373074fd43b62462a7adef7ad1e2127
+  repo: walterlv.github.io
+leancloud:
+  appid: 2NpLNUTfjU4ey5wOeWPPiXXL-gzGzoHsz
+  appkey: OeA2qCtXi7ifv96UbMQ4J1kn
+
+# 外观设置
+# Prefer color scheme setting.
+#
+# Note: Keep empty will follow the system prefer color by default,
+# and there will be a toggle to switch the theme between dark and light
+# on the bottom left of the sidebar.
+#
+# Available options:
+#
+#     light  - Use the light color scheme
+#     dark   - Use the dark color scheme
+#
+theme_mode:   # [light|dark]
+
+# The CDN endpoint for images.
+# Notice that once it is assigned, the CDN url
+# will be added to all image (site avatar & posts' images) paths starting with '/'
+#
+# e.g. 'https://cdn.com'
+img_cdn:
+
+logo: /assets/img/logo.png
+icon: /favicon.ico
+avatar:
+  img: /assets/img/mvp.svg
+  alt: Microsoft MVP
+  url: https://mvp.microsoft.com/en-us/PublicProfile/5003225
+  hint: 查看我的微软 MVP 主页
+license:
+  img: /assets/img/by-nc-sa.svg
+
+# boolean type, the global switch for ToC in posts.
+toc: true
+
+## 分页设置
+excerpt_separator: ---
+paginate: 30
+per_page: 30
+paginate_path: "/blog/page:num/"
 collections:
-  posts:
-    permalink: /:year/:month/:day/:title/
+  articles:
+    output: true
+
+# ------------ The following options are not recommended to be modified ------------------
+
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:   # Rouge Options › https://github.com/jneen/rouge#full-options
+    css_class: highlight
+    # default_lang: console
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+collections:
+  tabs:
+    output: true
+    sort_by: order
+
+
+defaults:
+  -
+    scope:
+      path: '_posts'          # An empty string here means all files in the project
+      type: posts
+    values:
+      layout: post
+      author: "吕毅"
+      comments: true    # Enable comments in posts.
+      toc: true         # Display TOC column in posts.
+      # DO NOT modify the following parameter unless you are confident enough
+      # to update the code of all other post links in this project.
+      permalink: "/post/:title"
+  -
+    scope:
+      path: _articles
+      type: "articles"
+    values:
+      layout: "post"
+      comments: false
+      permalink: "/article/:title"
+  -
+    scope:
+      path: ''
+      type: tabs             # see `site.collections`
+    values:
+      layout: page
+      permalink: /:title/
+
+sass:
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
+
+exclude:
+  - '*.gem'
+  - '*.gemspec'
+  - tools
+  - docs
+  - README.md
+  - LICENSE
+  - gulpfile.js
+  - node_modules
+  - package*.json
+
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/
