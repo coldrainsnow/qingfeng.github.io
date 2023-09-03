@@ -4,31 +4,28 @@
 
 /* sidebar */
 
-$sidebar-width: 340px !default;        // the basic width
-$sidebar-width-small: 260px !default;  // screen width: >= 850px, <= 1199px (iPad landscape)
-$sidebar-width-large: 340px !default;  // screen width: >= 1650px
-
-/* tabs of sidebar */
-
-$tab-count: 5 !default;   // backward compatible (version <= 4.0.2)
-$tab-height: 3rem !default;
-$tab-cursor-height: 1.6rem !default;
-
-$cursor-width: 2px !default;    // the cursor width of the selected tab
+$sidebar-width: 260px !default; /* the basic width */
+$sidebar-width-large: 300px !default; /* screen width: >= 1650px */
 
 /* other framework sizes */
 
 $topbar-height: 3rem !default;
-
+$search-max-width: 210px !default;
 $footer-height: 5rem !default;
-$footer-height-mobile: 6rem !default;   // screen width: <= 576px
-
-$main-content-max-width: 1150px !default;
-
-$panel-max-width: 300px !default;
-
+$footer-height-mobile: 6rem !default; /* screen width: < 850px */
+$main-content-max-width: 1250px !default;
 $bottom-min-height: 35rem !default;
+$base-radius: 0.5rem;
 
 /* syntax highlight */
 
 $code-font-size: 0.85rem !default;
+$code-header-height: 2.25rem;
+$code-dot-size: 0.75rem;
+$code-dot-gap: 0.5rem;
+$code-icon-width: 1.75rem;
+
+/* fonts */
+
+$font-family-base: 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+$font-family-heading: Lato, 'Microsoft Yahei', sans-serif;

@@ -1,1 +1,0 @@
-dotnet build\mdmeta\mdmeta.dll init
